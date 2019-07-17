@@ -17,6 +17,7 @@ function init() {
 
 var index = 0;
 init()
+document.onKeyDown = onKeyDownHandler;
 
 function onKeyDownHandler(e) {
   const key = e.key;
