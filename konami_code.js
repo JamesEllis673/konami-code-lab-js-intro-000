@@ -12,5 +12,18 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  var index = 0;
+  function onKeyDownHandler(e) {
+    const key = e.key;
+    if (key === codes[index]) {
+      index++;
+      if (index === codes.length) {
+        alert("Wow!");
+        index = 0;
+      }
+    }
+    else {
+      index = 0;
+    }
+  }
 }
